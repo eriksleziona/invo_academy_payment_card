@@ -1,0 +1,27 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+/// 
+/// 
+
+@import 'form.scss';
+
+.home-page-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+    & &__logo {
+        position: relative;
+        top: 64px;
+        left: 64px;
+        display: flex;
+        flex-direction: row;
+        gap: 9px;
+    }
+
+    & &__rightside-image {
+       width: 100%;
+       height: auto;
+    }
+}

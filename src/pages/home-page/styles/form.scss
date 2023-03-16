@@ -1,0 +1,38 @@
+
+.form-container {
+    padding: 195px 64px;
+
+     & &__title {
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: -3%;
+     }
+
+     & &__wrapper {
+        display: flex;
+        flex-direction: column;
+     }
+
+     & &__wrapper-item {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+        border: 1px solid var(--color-placeholder-text);
+        border-radius: 24px;
+        padding: 10px 24px;
+        gap: 4px;
+     }
+
+     & &__wrapper-placeholder {
+        font-size: 12px;
+        color:  var(--color-placeholder-text);
+        line-height: 12px;
+        letter-spacing: -3%;
+     }
+
+     & &__wrapper-input {
+        padding: 0;
+        border: none;
+     }
+}
