@@ -1,27 +1,43 @@
+@import 'mixins.scss';
+
 
 .form-container {
-    padding: 195px 64px;
-
+   padding: 131px 64px; 
+    max-width: 568px;
      & &__title {
         font-size: 40px;
         line-height: 44px;
         letter-spacing: -3%;
+        margin-top: 41px;
+        margin-bottom: 48px
      }
 
      & &__wrapper {
-        display: flex;
-        flex-direction: column;
+        @include column-directon;
+        max-width: 440px;
+        gap: 14px
+     }
+
+     & &__wrapper-row {
+      @include row-direction;
+      gap: 14px
      }
 
      & &__wrapper-item {
-        display: flex;
-        flex-direction: column;
+        @include column-directon;  
         align-content: center;
-        
         border: 1px solid var(--color-placeholder-text);
         border-radius: 24px;
         padding: 10px 24px;
         gap: 4px;
+     }
+
+     & &__wrapper-item--small {
+      width: 117px;
+     }
+
+     & &__wrapper-item--medium {
+      width: 261px;
      }
 
      & &__wrapper-placeholder {
