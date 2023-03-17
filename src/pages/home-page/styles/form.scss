@@ -5,16 +5,18 @@
    padding: 131px 64px; 
     max-width: 568px;
      & &__title {
+         max-width: 440px;
         font-size: 40px;
         line-height: 44px;
-        letter-spacing: -3%;
+        letter-spacing: -0.03em;
         margin-top: 41px;
-        margin-bottom: 48px
+        margin-bottom: 34px
      }
 
      & &__wrapper {
         @include column-directon;
         max-width: 440px;
+        margin: 0;
         gap: 14px
      }
 
@@ -27,7 +29,7 @@
         @include column-directon;  
         align-content: center;
         border: 1px solid var(--color-placeholder-text);
-        border-radius: 24px;
+        border-radius: 18px;
         padding: 10px 24px;
         gap: 4px;
      }
