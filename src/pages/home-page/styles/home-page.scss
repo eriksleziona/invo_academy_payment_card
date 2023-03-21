@@ -4,10 +4,11 @@
 /// 
 
 @import 'form.scss';
-
+@import 'mixins.scss';
 .home-page-container {
     max-width: 1440px;
     display: flex;
+    margin: 0 auto;
     flex-direction: row;
     & &__logo {
         position: relative;
@@ -26,7 +27,22 @@
     }
 
     & &__rightside-image {
-       max-width: 100%;
-       height: 100%;
+        width: 872px;
+    }
+
+
+    @media (max-width: 992px) {
+        max-width: 834px;
+        @include column-directon-reverse;
+        & &__logo {
+            position: absolute;
+            left: 50%;
+            top: 48px;
+            transform: translate(-48px) translateY(-50%);
+        }
+
+        & &__rightside {
+            object-fit: scale-down;
+        }
     }
 }

@@ -23,28 +23,36 @@
           <div class="form-container__wrapper">
             <h1 class="form-container__title">Add your informations</h1>
             <div class="form-container__wrapper-item">
-              <span class="form-container__wrapper-placeholder">Name on card</span>
-              <input class="form-container__wrapper-input" type="text">
+              <input class="form-container__wrapper-input" type="text" placeholder="">
+              <label class="form-container__wrapper-placeholder">Name on card</label>
             </div>
             <div class="form-container__wrapper-item">
-              <span class="form-container__wrapper-placeholder">Card number</span>
-              <input class="form-container__wrapper-input" type="text">
+              <input id="card" class="form-container__wrapper-input" type="text" placeholder="">
+              <label for="card" class="form-container__wrapper-placeholder">Card number</label>
             </div> 
            <div class="form-container__wrapper-row">
             <div class="form-container__wrapper-item form-container__wrapper-item--medium">
-              <span class="form-container__wrapper-placeholder">Expiry date (MM/YY)</span>
               <input class="form-container__wrapper-input" type="text">
+              <label class="form-container__wrapper-placeholder">Expiry date (MM/YY)</label>
             </div>
             <div class="form-container__wrapper-item form-container__wrapper-item--small">
-              <span class="form-container__wrapper-placeholder">CVV</span>
-              <input class="form-container__wrapper-input" type="text">
+              <input id="cvv" class="form-container__wrapper-input" type="text" placeholder="">
+              <label class="form-container__wrapper-placeholder">CVV</label>
             </div>
            </div>
+           <div class="form-container__btn">
+            <a class="form-container__btn-title" href="#">Next Step</a>
+          </div>
           </div>
         </div>
       </div>
       <div class="home-page-container__rightside">
-        <img class="home-page-container__rightside-image" src="public/images/Frame 1000003360.jpg" alt="">
+        <div class="home-page-container__rightside-image">
+          <img src="public/images/cards.svg" alt="" srcset="">
+          <!-- <img class="home-page-container__rightside-front" src="public/images/front_card.svg" alt="">
+          <img class="home-page-container__rightside-back" src="public/images/back_card.svg" alt=""> -->
+        </div>
+
       </div>
     </div>
   </div>

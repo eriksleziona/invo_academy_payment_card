@@ -5,52 +5,71 @@
    padding: 131px 64px; 
     max-width: 568px;
      & &__title {
-         max-width: 440px;
+        max-width: 440px;
         font-size: 40px;
         line-height: 44px;
         letter-spacing: -0.03em;
         margin-top: 41px;
-        margin-bottom: 34px
+        margin-bottom: 34px;
      }
-
      & &__wrapper {
         @include column-directon;
-        max-width: 440px;
-        margin: 0;
-        gap: 14px
+        justify-content: center;
+        margin: 0 auto;
+        width: 440px;
+        gap: 14px;
      }
-
      & &__wrapper-row {
       @include row-direction;
-      gap: 14px
+      gap: 14px;
      }
-
      & &__wrapper-item {
-        @include column-directon;  
+        @include column-directon-reverse;  
         align-content: center;
-        border: 1px solid var(--color-placeholder-text);
+        color: var(--color-input-text);
+        border: 1px solid var(--color-input-border);
         border-radius: 18px;
         padding: 10px 24px;
         gap: 4px;
      }
-
+     & &__wrapper-item:hover {
+      border-color: var(--color-input-text-hover);
+      color: var(--color-input-text-hover);
+     }
      & &__wrapper-item--small {
       width: 117px;
      }
-
      & &__wrapper-item--medium {
       width: 261px;
      }
-
      & &__wrapper-placeholder {
         font-size: 12px;
         color:  var(--color-placeholder-text);
         line-height: 12px;
         letter-spacing: -3%;
-     }
-
+     }   
      & &__wrapper-input {
         padding: 0;
         border: none;
+     }
+     & &__btn {
+      background-color: var(--color-btn-primary);
+      padding: 20px 0;
+      text-align: center;
+      border-radius: 18px;
+      margin-top: 18px;
+     }
+     & &__btn-title {
+      text-decoration: none;
+      color: #FFF;
+     }
+
+     @media (max-width: 992px) {
+         margin:  0 auto;
+         padding: 100px 0;
+         & &__title {
+            margin-top: 0;
+            text-align: center;
+         }
      }
 }

@@ -5,7 +5,18 @@
     flex-direction: column;
 }
 
+@mixin column-directon-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 @mixin row-direction {
     display: flex;
     flex-direction: row;
 }
+
+@mixin form-transition {
+    transition: all 2s;
+    touch-action: manipulation;
+}
+
