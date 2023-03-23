@@ -1,0 +1,13 @@
+
+.btn {
+    background-color: var(--color-btn-primary);
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 18px;
+    margin-top: 18px;
+
+    & &__title {
+        text-decoration: none;
+        color: #FFF;
+       }
+}

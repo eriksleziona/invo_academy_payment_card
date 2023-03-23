@@ -6,9 +6,12 @@ import '../styles/home-page.scss'
 import  Validators from '../scripts/form-validation'
 
 
+
+
 const triggers = {
     'card' : document.getElementById('card'),
-    'cvv': document.getElementById('cvv')
+    'cvv': document.getElementById('cvv'),
+    'btn': document.getElementsByClassName('btn')
 }
 
 const val = new Validators()
@@ -23,3 +26,4 @@ triggers.cvv.addEventListener('keyup', () => {
     let cvvNum = triggers.cvv.value;
     console.log(val.validateCVV(cvvNum))
 })
+

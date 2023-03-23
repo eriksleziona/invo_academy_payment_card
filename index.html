@@ -20,37 +20,35 @@
         </div>
         <div class="form-container">
          
-          <div class="form-container__wrapper">
+          <form class="form-container__wrapper">
             <h1 class="form-container__title">Add your informations</h1>
             <div class="form-container__wrapper-item">
-              <input class="form-container__wrapper-input" type="text" placeholder="">
+              <input class="form-container__wrapper-input" type="text" required>
               <label class="form-container__wrapper-placeholder">Name on card</label>
             </div>
             <div class="form-container__wrapper-item">
-              <input id="card" class="form-container__wrapper-input" type="text" placeholder="">
+              <input id="card" class="form-container__wrapper-input" type="text" required>
               <label for="card" class="form-container__wrapper-placeholder">Card number</label>
             </div> 
            <div class="form-container__wrapper-row">
             <div class="form-container__wrapper-item form-container__wrapper-item--medium">
-              <input class="form-container__wrapper-input" type="text">
+              <input class="form-container__wrapper-input" type="text" maxlength="5" required>
               <label class="form-container__wrapper-placeholder">Expiry date (MM/YY)</label>
             </div>
             <div class="form-container__wrapper-item form-container__wrapper-item--small">
-              <input id="cvv" class="form-container__wrapper-input" type="text" placeholder="">
+              <input id="cvv" class="form-container__wrapper-input" type="text" maxlength="4" required>
               <label class="form-container__wrapper-placeholder">CVV</label>
             </div>
            </div>
-           <div class="form-container__btn">
-            <a class="form-container__btn-title" href="#">Next Step</a>
+           <div class="btn">
+            <a class="btn__title" href="#">Next Step</a>
           </div>
-          </div>
+        </form>
         </div>
       </div>
       <div class="home-page-container__rightside">
-        <div class="home-page-container__rightside-image">
-          <img src="public/images/cards.svg" alt="" srcset="">
-          <!-- <img class="home-page-container__rightside-front" src="public/images/front_card.svg" alt="">
-          <img class="home-page-container__rightside-back" src="public/images/back_card.svg" alt=""> -->
+        <div class="home-page-container__rightside-wrapper">
+          <img class="home-page-container__rightside-image" src="public/images/card_image.svg" alt="" srcset="">
         </div>
 
       </div>
